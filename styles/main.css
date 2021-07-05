@@ -1,0 +1,679 @@
+/*-------------------١--------------------------*/
+/*                  ملحوظات                     */
+/*
+ملحوظة عامة:لقد  تركت لكم تعليقات لتساعدك علي تنظيم الملف بالشكل المثالي
+تأكد من أن آخر جزء هو الجزء الحاوي لكل ما هو متعلق بشكل الصفحة على الهواتف والتابلت
+إذا كان لديك أي سؤال من فضلك إرسل لي الكود وشرح المشكلة علي البريد الالكتروني
+tony@barmej.com
+*/
+/*----------------------------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*----------------------١-----------------------*/
+/*
+Fonts & Font-faces سنقوم بوضع جميع الخطوط التي سنحتاجها هنا
+ملحوظة: إسم الخط هو إما
+Avenir Next 
+أو إن لم تجده فيمكنك استعمال خط 
+Lato
+*/
+/*---------------------------------------------*/
+
+
+/*----------------------٢-----------------------*/
+/*                  DEFAULTS                    */
+/*
+يجب عليك هنا وضع أي من الأنماط العامة الخاصة بوسوم مثل
+html, body, h1, h2, p 
+وهي الأنماط التي تنطبق على الموقع بشكل عام وكل صفحاته وليس على عنصر معين في صفحة معينة
+*/
+/*----------------------------------------------*/
+body {
+    background-color: white;
+    font-family:Arial, Helvetica, sans-serif ;
+    color: rgb(41, 41, 41);
+}
+.container{
+    padding: 25px;
+    margin: 0 55px;  
+}
+/*----------------------٣-----------------------*/
+/*               HELPER CLASSES                 */
+/*
+يجب عليك هنا وضع أي من الأنماط الخاصة بال
+classes
+التي ستقوم بإعادة إستخدامها في أكثر من مكان خلال عملك على الموقع 
+على سبيل المثال: النمط الخاص بالزر الأزرق الذي يستعمله المصمم في كل الصفحات تقريباً
+*/
+/*----------------------------------------------*/
+
+
+
+/*----------------------٤-----------------------*/
+/*                    LAYOUT                    */
+/*                البناء العام للصفحة           */
+/*----------------------------------------------*/
+
+
+/*----------------------٥-----------------------*/
+/*                    HEADER                    */
+/*----------------------------------------------*/
+header{
+    padding: 15px;
+}
+header .container{
+    padding: 0 0;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #EEF0FC;
+}
+header .main-nav{
+    margin-left: auto;   
+}
+header .main-nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+header .main-nav a{
+    margin-left: 45px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+header .burger{
+    display: none;
+}
+/*----------------------٦-----------------------*/
+/*                     HERO                     */
+/*----------------------------------------------*/
+section .container{
+    display: flex;
+}
+.hero__image{
+    padding: 100px 0;
+}
+.hero__desc{
+    padding: 150px 0;
+    margin-right: 140px;
+}
+.hero__desc h1{   
+    font-size: 43px;
+    font-weight: 800;
+}
+.hero__desc p{
+    font-size: 18px;
+    margin-top: 40px;
+    padding-bottom: 60px;
+}
+.hero__desc a{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 22px 75px;
+    border: 1px solid #3242C4;
+    border-radius: 100px;
+    background-color: #3242C4;
+    color: white;
+    text-decoration: none;
+    width: 450px;   
+}
+/*----------------------٧-----------------------*/
+/*              MEET YOUR MATCH                 */
+/*----------------------------------------------*/
+.meetYourMatch__background{
+    height: 515px;
+    width: 89%;
+    background-color: #eef0fc;
+    position: absolute;
+    border-radius: 20px;
+}
+.meetYourMatchــcontent{
+    padding-top: 90px;
+    position: relative;
+}
+.meetYourMatchــcontent h2{
+    text-align: center;
+    font-size: 35px;
+}
+.meetYourMatchــform .switcher{
+    display: flex;
+    align-items: center;
+    padding-top: 33px;
+    padding-bottom: 20px;
+    margin-left: 41.5%;   
+}
+.switcher input{
+    opacity: 0;
+}
+.meetYourMatchــform span{
+    margin-left: 15px;
+    font-size: 14px;
+    color: darkgray;
+}
+.form-group{
+    text-align: center;
+    margin-left: 40%;
+    padding: 5px;
+    border-radius: 100px;
+}
+.form-group button{
+    background-color:#3B3BBF;
+    border: 1px solid #3B3BBF;
+    border-radius: 100px;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 21px 65px;
+    position: relative;
+    margin-right: 160px;
+}
+.form-group input{
+    outline: none;
+    border: 1px solid #3B3BBF;
+    border-radius: 100px;
+    color: #3B3BBF;
+    font-size: 18px;
+    padding: 21px 95px;
+    position: absolute;
+    margin-left: -340px;
+    background: url("../images/map-pin.png") no-repeat 1.3vw 20px;
+    background-color: white;
+    
+}
+.form-group input::placeholder{
+    color: #3b3bbfb0;  
+}
+.meetYourMatch .widgets{
+    display: flex;
+    align-items: center;       
+    margin: 0 80px;
+    padding: 50px 0;
+}
+.meetYourMatch .widget{
+    margin: 0 25px;   
+}
+.meetYourMatch .widget__image{
+    height: 220px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0.25px 2px 0 rgba(0, 0, 0, 0.19);
+}
+.meetYourMatch .widget__desc{
+    margin-bottom:50px ;   
+    padding: 7px 10px;
+    background-color:white;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0.25px 2px 0 rgba(0, 0, 0, 0.19);
+}
+.meetYourMatch .widget__desc h4{
+    margin: 12px 7px;
+}
+.meetYourMatch .widget__desc p{
+    margin: 12px 7px;
+}
+/*----------------------٨-----------------------*/
+/*               HOW IT WORKS                   */
+/*----------------------------------------------*/
+.howItWorks .container{
+    padding-top: 40px;
+    padding-bottom: 140px;
+    flex-direction: column;
+    
+}
+.howItWorks h2{
+    text-align: center;
+    font-size: 36px;
+}
+.howItWorks .widgets{
+    display: flex;
+    align-items: center;
+    padding-top: 70px;
+    margin: 0 30px;
+}
+.howItWorks .widget__image{
+    margin: 0 100px;
+}
+.howItWorks .widget__desc{
+    padding: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+
+    
+}
+.howItWorks .widget__desc h3{
+    font-size: 20px;
+    padding-bottom: 15px;
+    
+}
+.howItWorks .widget__desc p{
+    color: rgba(0, 0, 0, 0.5);
+}
+/*----------------------٩-----------------------*/
+/*                 STORIES                      */
+/*----------------------------------------------*/
+.stories .container{
+    padding: 0;
+    margin: 0;
+    display: block;
+    background-color: #F6F6F9;
+    padding: 120px 0;
+}
+.stories h2{
+    font-size: 36px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.stories p{
+    font-size: 18px;
+    padding: 0 440px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+.stories .widgets{
+    margin-left: 10% ;
+    display: flex;
+    align-items: center;
+}
+.stories .widget__image{
+    margin: 0 10px;
+}
+.stories .widget__desc{
+    margin-left: 10px;
+}
+.stories .widget__desc h3{
+    margin: 15px 0;
+}
+.stories .widget__desc a{
+    text-decoration: none;
+    color: #2329DB;
+    font-weight: bold;
+    font-size: 14px;
+}
+/*----------------------١٠----------------------*/
+/*       Actions: Change A Life, Adopt A Pet    */
+/*----------------------------------------------*/
+.actions .container{
+    padding: 0;
+    margin: 0;
+    display: block;
+    background-color: #3040C4;
+    color: white;
+    padding: 9% 0;
+}
+.actions h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 45px;
+}
+.actions .button{
+    font-size: 28px;
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+.actions .is-secondary{
+    margin-left: 35%;
+    font-size: 20px;
+    font-weight: 750;
+    padding: 17px 60px;
+    border: 1px solid white;
+    border-radius: 100px;
+    background-color: white;
+    color: #3040C4;
+    text-decoration: none;
+    width: 450px;
+}
+.actions .is-outline{
+    font-size: 20px;
+    font-weight: 750;
+    padding: 17px 60px;
+    border: 1px solid white;
+    border-radius: 100px;
+    background-color: #3040C4;
+    color: white;
+    text-decoration: none;
+    width: 450px;
+}
+/*---------------------١١-----------------------*/
+/*                    FOOTER                    */
+/*----------------------------------------------*/
+footer .container{
+    padding: 0;
+    margin: 0;
+    
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+footer .copyrights{
+    padding: 8%;
+}
+footer .copyrights a{
+    text-decoration: none;
+}
+footer .copyrights p{
+    margin: 10% 0;
+}
+footer .footer-nav{
+    display: flex;
+    padding: 80px;
+    font-size: 17px;
+}
+footer .footer-nav a{
+    text-decoration: none; 
+    color:rgba(0, 0, 0, 0.5);
+}
+footer .footer-nav ul{
+    list-style-type: none;
+    margin: 10% 0;
+}
+footer .footer-nav li{
+    margin: 20% 0;
+    font-size: 14px;
+}
+footer .footer-nav .item{
+    margin: 0 50px;
+    margin-top: 8%;
+}
+footer .footer-nav h5{
+    align-items:flex-start;
+    margin-bottom: 15px;
+    font-weight: 800;
+ }
+/*----------------------١٢----------------------*/
+/*                    Responsive                */
+/*       كل ما هو متعلق بالهواتف والتابلت       */
+/*----------------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 1180px){
+    /* header */
+    header .container{
+        border-bottom: 0;
+        margin-left: 5%;
+        margin-right: 0 ;
+        margin-top: 2%;
+    }
+    header .main-nav{
+        margin-left: 16%;
+    }
+    header .main-nav a{
+        margin-left: 40px;
+    }
+    /*hero*/
+    .hero .container{
+        padding: 0;
+    } 
+    .hero .hero__image img{
+        width: 340px;
+        align-items: center;
+        margin-left: 13%;
+        padding-top: 2%;
+    }
+    .hero__desc{
+        padding: 100px 0;
+        margin-right: 0;
+    }
+    .hero__desc h1{   
+        font-size: 34px;
+    }
+    .hero__desc p{
+        margin-top: 40px;
+        font-size: 17px;
+    }
+    .hero__desc a{
+        padding: 19px 50px;
+    }
+    /*meetyourmatch*/
+    .meetYourMatch__background {
+        height: 410px;
+    }
+    .meetYourMatch .container{
+        padding: 0;
+    }
+    .meetYourMatch__background{
+        width: 86%;
+    }   
+    .meetYourMatch .widgets{
+        margin: 0px 39px;
+        flex-wrap: wrap;
+    }
+    .meetYourMatchــform .switcher {
+        margin-left: 214px;
+        align-items: center;
+    } 
+    .form-group button {
+        margin-right: 0;
+        margin-left: 20px; 
+    }
+    .form-group {
+        margin-left: 51%;
+    }
+    /*howitworks*/
+    .howItWorks .container {
+        padding-top: 90px;
+    }
+    .howItWorks .widgets{
+        flex-direction: column;
+    }
+    .howItWorks .widget__image{
+        margin: 0 165px;
+    }
+    .howItWorks .widget__desc p{
+        margin: auto;
+        width: 270px;
+    }
+    /*stories*/
+    .stories p{
+        display: table-row-group;
+        padding: 0 80px;
+    }
+    .stories .widgets {
+        margin: 3%;
+        flex-wrap: wrap;
+        margin-left: 6%;
+    }
+    .stories .widgets img{
+        width: 320px;
+        margin-top: 6%;
+    }
+    .stories .widget__desc h3{
+        font-size: 22px;
+    }
+    /*actions*/
+    .actions .is-secondary {
+        margin-left: 21%;
+    }
+    /*footer*/
+    footer .footer-nav a{
+        font-size: 9px;
+    }   
+    footer .footer-nav{
+    padding: 45px;
+    padding-right: 0;
+    }
+    footer .footer-nav .item {
+        margin: 0px 30px;
+    }
+    footer .footer-nav h5 {
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 425px){
+    /*header*/
+    header .container{
+        margin-left: 3%;
+        margin-right: 0 ;
+        margin-top: 6%;
+    }
+
+    header .burger {
+        display: block;
+        background-color: transparent;
+        border: none;
+        margin-left: 59%;
+    }
+    header .burger div{
+        width: 20px;
+        height: 3px;
+        background-color: black;
+        margin: 4px 0;
+    }
+    header .main-nav ul{
+        display: none;
+    }
+    /*hero*/
+
+    .hero .container{
+        padding: 0;
+        display: block;
+        margin-left: 6%;
+        margin-right: 0 ;
+        margin-top: 6%;
+    } 
+    .hero__desc{
+        padding: 50px 0;
+        margin-right: 0;
+    }
+    .hero__desc h1{   
+        font-size: 34px;
+    }
+    .hero__desc p{
+        margin-right: 20px;
+        margin-top: 40px;
+        font-size: 17px;
+    }
+    .hero__desc a{
+        padding: 19px 50px;
+    }
+    .hero .hero__image img {
+        width: 390px;
+        align-items: center;
+        margin: 0px;
+        padding: 0;
+        margin-left: -7%;
+    }
+    .hero__image {
+        padding: 0;
+        height: 186.61px;
+    }
+    /*meetyourmatch*/
+    .meetYourMatch .container{
+        padding: 0;
+        margin: 0;
+    }
+    .meetYourMatch__background {
+        height: 470px;
+        width: 101%;
+        border-radius: 0 0 20px 20px;
+    }
+    .meetYourMatchــcontent h2 {
+        font-size: 25px;
+    } 
+    .meetYourMatch .widgets{
+        margin: 0px 39px;
+        flex-wrap: wrap;
+    }
+    .meetYourMatchــform .switcher {
+        margin-left: 77px;
+    } 
+    .meetYourMatchــcontent {
+        padding-top: 66px;
+    }
+    .form-group input {
+        font-size: 17px;
+        padding: 18px 35px;
+        margin-left: -160px;
+        background: url(../images/map-pin.png) no-repeat 1.3vw 16px;
+        background-color: white;
+    }
+    .form-group button {
+        font-size: 17px;
+        padding: 18px 43px;
+        margin-right: 160px;
+    }
+    .form-group {
+        margin-left: 51%;
+    }
+
+    /*howitworks*/
+    .howItWorks .container {
+        padding-top: 90px;
+    }
+    .howItWorks .widgets{
+        flex-direction: column;
+    }
+    .howItWorks .widget__image{
+        margin: 0 165px;
+    }
+    .howItWorks .widget__desc p{
+        margin: auto;
+        width: 270px;
+    }
+    /*stories*/
+    .stories p{
+        display: table-row-group;
+        padding: 0 80px;
+    }
+    .stories .widgets {
+        margin: 3%;
+        flex-direction: column;
+        margin-left: 6%;
+    }
+    .stories .widgets img{
+        width: 320px;
+        margin-top: 6%;
+    }
+    .stories .widget__desc h3{
+        font-size: 22px;
+    }
+    /*actions*/
+    .actions .container{
+        padding-top: 10%;
+        padding-bottom: 20%;
+    }
+    .actions .is-secondary {
+        margin-left: 15%;
+        font-size: 16px;
+        font-weight: 750;
+        padding: 14px 22px;
+    }
+    .actions .is-outline {
+        margin-left: 57%;
+        font-size: 16px;
+        font-weight: 750;
+        padding: 14px 35px;
+        margin: auto;
+    }
+    .actions h2 {
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 38px;
+    }
+    /*footer*/
+    footer .container {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    footer .footer-nav .item {
+        margin: 0px 26px;
+        margin-top: 10%;
+    }
+    footer .footer-nav {
+        display: flex;
+        padding: 0;
+        font-size: 17px;
+        flex-wrap: wrap;
+    }
+    footer .copyrights {
+        margin-right: auto;
+        padding: 8%;
+    }
+}
